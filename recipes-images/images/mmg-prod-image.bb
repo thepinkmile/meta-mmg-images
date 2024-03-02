@@ -1,4 +1,4 @@
-require tdx-reference-minimal-image.bb
+require recipes-images/images/tdx-reference-minimal-image.bb
 
 SUMMARY = "MMG Minimal Image"
 
