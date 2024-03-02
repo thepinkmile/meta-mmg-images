@@ -1,4 +1,4 @@
-require mmg-custom-image.bb
+require mmg-prod-image.bb
 
 SUMMARY = "MMG Development Image"
 
