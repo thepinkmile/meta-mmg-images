@@ -9,7 +9,7 @@ export IMAGE_BASENAME = "MMG-Minimal-Image"
 IMAGE_LINGUAS = "en-gb"
 
 # swap dropbear for openssh
-TASK_BASIC_SSHDAEMON = "openssh-sshd openssh-sftp openssh-sftp-server"
+#TASK_BASIC_SSHDAEMON = "openssh-sshd openssh-sftp openssh-sftp-server"
 
 # add openssh
 IMAGE_FEATURES += " \
@@ -25,10 +25,10 @@ IMAGE_INSTALL += " \
 "
 
 # Going to use openssh instead of dropbear
-IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-dropbear"
-IMAGE_FEATURES += " ssh-server-openssh"
-IMAGE_INSTALL:remove = " dropbear"
-IMAGE_INSTALL:append = " openssh-sshd"
+#IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-dropbear"
+#IMAGE_FEATURES += " ssh-server-openssh"
+#IMAGE_INSTALL:remove = " dropbear"
+#IMAGE_INSTALL:append = " openssh-sshd"
 
 # Going to use networkmanager instead of conman
 IMAGE_INSTALL:remove = " ${CONMANPKGS}"
