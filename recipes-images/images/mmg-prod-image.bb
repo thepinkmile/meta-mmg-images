@@ -10,6 +10,7 @@ IMAGE_LINGUAS = "en-gb"
 
 # add openssh
 IMAGE_FEATURES += " \
+	package-management \
 	ssh-server-openssh \
 "
 
@@ -18,6 +19,7 @@ IMAGE_INSTALL += " \
 	packagegroup-mmg-base \
 	packagegroup-fsl-gstreamer1.0-full \
 	packagegroup-base-tdx-cli \
+	packagegroup-core-ssh-openssh \
 	${@bb.utils.contains("MACHINE_FEATURES", "tpm2", "packagegroup-tpm2-tdx-cli", "",d)} \
 "
 
