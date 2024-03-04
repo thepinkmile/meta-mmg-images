@@ -9,7 +9,7 @@ export IMAGE_BASENAME = "MMG-Minimal-Image"
 IMAGE_LINGUAS = "en-gb"
 
 # swap dropbear for openssh
-#TASK_BASIC_SSHDAEMON = "openssh-sshd openssh-sftp openssh-sftp-server"
+TASK_BASIC_SSHDAEMON = "openssh-sshd openssh-sftp openssh-sftp-server"
 
 # add openssh
 IMAGE_FEATURES += " \
